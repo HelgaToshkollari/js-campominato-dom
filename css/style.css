@@ -16,6 +16,9 @@
 .squares.active{
     background-color: rgb(166, 128, 202);
 }
+.bomb.active{
+    background-color: red;
+}
 
 .container {
     display: flex;

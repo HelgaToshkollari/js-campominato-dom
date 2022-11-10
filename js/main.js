@@ -56,17 +56,18 @@ function generateRandomNbr (min, max){
 }
 
 function generateBombs (squaresNbr){
-    const bombsArray = [];
-    console.log(bombsArray)
+    let bombsArray = [];
+    console.log(bombsArray) 
 
     while (bombsArray.length < 16 ) {
-        const nbr = generateRandomNbr ( 1, squaresNbr);
 
+        const nbr = generateRandomNbr ( 1, squaresNbr);
         if (!bombsArray.includes(nbr)){
             bombsArray.push(nbr);
+            
         }
     }
-
+    
     return bombsArray;
 
 }
